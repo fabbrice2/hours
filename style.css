@@ -1,0 +1,194 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+
+    font-family: 'Orbitron', sans-serif;
+}
+
+.center{
+    background: rgb(222 235 237);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: all 0.3s;
+}
+
+.center.dark{
+    background: #111;
+}
+
+.center.dark .HOURS{
+    background: #111111f5;
+}
+
+.center.dark .HOURS .hours{
+    /* color: white; */
+    background: #24292D;
+
+}
+
+.center.dark .HOURS .minutes{
+    /* color: white; */
+    background: #24292D;
+
+}
+
+.center.dark .HOURS .seconds{
+    /* color: white; */
+    background: #24292D;
+
+}
+
+
+
+.HOURS{
+    background: white;
+    height: 200px;
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+    transition: all 0.3s;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.mode{
+    display: flex;
+    justify-content: end;
+}
+
+.mode .material-symbols-outlined{
+    transition: all 0.3s;
+    color: white;
+    background: #111;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    line-height: 30px;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.center.dark .HOURS .mode span{
+    color: #111;
+    background: white;
+}
+
+.mode span:last-child{
+    display: none;
+    pointer-events: none;
+}
+
+.center.dark .mode span:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+.Hours{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.Hour{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.hours, .minutes, .seconds{
+    background: rgb(231, 240, 241);
+    padding: 10px;
+    height: 120px;
+    width: 120px;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+span{
+    font-size: 50px;
+    font-weight: 800;
+}
